@@ -2,17 +2,17 @@
 #include "Framework/Input.h"
 #include "Framework/GameObject.h"
 
-class Player :
+class Enemy :
 	public GameObject
 {
 private:
 	sf::Window* window;
-	int speed;
+	sf::Vector2i speed;
 
 public:
-	Player();
+	Enemy();
 
-	void handleInput(float dt);
 	void setWindow(sf::Window* w) { window = w; };
+	void update(float dt);
 };
 

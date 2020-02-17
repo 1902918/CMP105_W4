@@ -4,6 +4,7 @@
 #include "Framework/Input.h"
 #include "Framework/GameObject.h"
 #include "Player.h"
+#include "Enemy.h"
 #include <string.h>
 #include <iostream>
 
@@ -28,6 +29,11 @@ private:
 
 	// Level objects
 	Player playerObject;
-	sf::Texture texture;
+	sf::Texture playerTexture;
 
+	Enemy enemyObject1;
+	sf::Texture enemyTexture1;
+
+	Enemy enemyObject2;
+	sf::Texture enemyTexture2;
 };
